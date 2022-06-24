@@ -52,11 +52,6 @@ div form {
   }
 
 
-
-  label {
-    font-family: "Open Sans", sans-serif;
-  }
-
   input[type="submit"] {
     width: 97%;
     background-color: bisque;
@@ -65,7 +60,6 @@ div form {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -86,7 +80,6 @@ select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 
 .btn-group button{
@@ -100,7 +93,6 @@ select, textarea {
 }
 
 .footer {
-  font-family: "Fredoka", sans-serif;
   position:fixed;
   left:0;
   bottom: 0;
@@ -125,7 +117,6 @@ select, textarea {
 }
 
 .navbar-nav a{
-  font-family: "Fredoka", sans-serif;
   color: rgb(80, 175, 238);
 }
 
