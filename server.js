@@ -1,4 +1,3 @@
-const path = require("path");
 const exphbs = require("express-handlebars");
 var express = require("express");
 var app = express();
@@ -64,6 +63,14 @@ app.get("/register", (req, res) => {
 
 app.get("/login", (req, res) => {
   res.render("login");
+});
+
+app.get("/categories", (req, res) => {
+  res.render("categories");
+});
+
+app.get("/topthreads", (req, res) => {
+  res.render("topthreads");
 });
 
 app.listen(HTTP_PORT, () => {
