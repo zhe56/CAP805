@@ -1,5 +1,4 @@
 body {
-  overflow-y: auto;
   background: #edebd7;
 }
 
@@ -11,15 +10,15 @@ body {
 }
 
 .table th{
-    background-color: rgb(189, 220, 247);
+    background-color: #77766c;;
     padding: 20px;
 }
 .table td + td {
-   border-left:2px solid rgb(189, 220, 247);
+   border-left:2px solid #77766c;;
   }
 
 .table tr{
-    border-bottom:2px solid rgb(189, 220, 247);
+    border-bottom:2px solid #77766c;;
   }
 
 .table a{
@@ -32,14 +31,15 @@ body {
 
 
 ul, li {
-    margin-left: 0; padding-left: 0;
+    margin-left: 0; 
+    padding-left: 0;
 }
 
 #side-banner-title {
     padding: 15px 20px 15px 20px;
-    background-color: rgb(105, 178, 228);
+    background-color: #77766c;
     display:block;
-    color:white;
+    color:black;
     margin-top: -23px;
     text-align: center;
 }
@@ -50,14 +50,17 @@ ul, li {
 #side-banner-content a{
   color: black;
 }
+#side-banner-content li{
+  margin-bottom: 15px;
+}
 
-div form {
+div form{
     border-radius: 8px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}
 
-  input[type="submit"] {
+input[type="submit"]{
     width: 97%;
     background-color: rgb(204, 190, 173);
     padding: 14px 20px;
@@ -69,11 +72,11 @@ div form {
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 14px;
-  }
+}
   
-  input[type="submit"]:hover {
+input[type="submit"]:hover{
     background-color: rgb(142, 177, 241);
-  }
+}
 
   
 input[type="text"], input[type="email"], input[type="password"],
@@ -113,12 +116,12 @@ select, textarea {
 }
 
 .navbar-nav a{
-  color: #000000;
-  font-weight: 500;
+  color: #000000 !important;
+  font-weight: 500 !important;
 }
 
 .navbar-nav a:hover{
-  color: rgb(39, 185, 178);
+  color: rgb(39, 185, 178) !important;
 }
 
 .active a {
@@ -128,7 +131,6 @@ select, textarea {
 .navbar {
   background-color: #77766c;
 }
-
 
 .copyright{
   position: absolute;
