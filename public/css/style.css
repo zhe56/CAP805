@@ -50,6 +50,9 @@ ul, li {
 #side-banner-content a{
   color: black;
 }
+#side-banner-content li{
+  margin-bottom: 15px;
+}
 
 div form{
     border-radius: 8px;
