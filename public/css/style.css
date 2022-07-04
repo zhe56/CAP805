@@ -10,15 +10,15 @@ body {
 }
 
 .table th{
-    background-color: rgb(189, 220, 247);
+    background-color: #77766c;;
     padding: 20px;
 }
 .table td + td {
-   border-left:2px solid rgb(189, 220, 247);
+   border-left:2px solid #77766c;;
   }
 
 .table tr{
-    border-bottom:2px solid rgb(189, 220, 247);
+    border-bottom:2px solid #77766c;;
   }
 
 .table a{
@@ -37,9 +37,9 @@ ul, li {
 
 #side-banner-title {
     padding: 15px 20px 15px 20px;
-    background-color: rgb(105, 178, 228);
+    background-color: #77766c;
     display:block;
-    color:white;
+    color:black;
     margin-top: -23px;
     text-align: center;
 }
