@@ -73,6 +73,18 @@ app.get("/topthreads", (req, res) => {
   res.render("topthreads");
 });
 
+app.get("/profile", (req, res) => {
+  res.render("profile");
+});
+
+app.get("/account", (req, res) => {
+  res.render("account");
+});
+
+app.get("/notifications", (req, res) => {
+  res.render("notifications");
+});
+
 app.listen(HTTP_PORT, () => {
   console.log("server listening on port: " + HTTP_PORT);
 });

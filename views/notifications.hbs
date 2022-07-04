@@ -1,0 +1,74 @@
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+        <br>
+        <h2><u>Notifications</u></h2>
+        <br>
+        </div>
+    </div>
+    <div>
+        <ul class="nav justify-content-end">
+            {{#navLink "/account"}}Account{{/navLink}}
+            {{#navLink "/profile"}}Profile{{/navLink}}
+            {{#navLink "/notifications"}}Notifications{{/navLink}}
+        </ul>
+    </div>
+    <div>
+      <div class="col-12">
+        <table class="table">
+        <thead class="thead-dark">
+          <tr>
+              <th class="col-6" id="main_titles">Latest Notifications</th>
+              <th class="col-3" id="main_titles">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{!-- {{#each Topic}} --}}
+          <tr>
+            {{!-- <td>{{this.title}}</td> --}}
+            {{!-- <td id="main_titles">{{this.posts}}</td> --}}
+            <td><a href="#">Title 1</a></td>
+            <td id="main_titles">2022-July-01</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 2</a></td>
+            <td id="main_titles">2022-July-01</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 3</a></td>
+            <td id="main_titles">2022-June-30</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 4</a</td>
+            <td id="main_titles">2022-June-30</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 5</a></td>
+            <td id="main_titles">2022-June-21</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 6</a></td>
+            <td id="main_titles">2022-June-21</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 7</a></td>
+            <td id="main_titles">2022-June-20</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 8</a></td>
+            <td id="main_titles">2022-June-11</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 9</a></td>
+            <td id="main_titles">2022-June-10</td>
+          </tr>
+          <tr>
+            <td><a href="#">Title 10</a></td>
+            <td id="main_titles">2022-June-01</td>
+          </tr>
+          {{!-- {{/each}} --}}
+        </tbody>
+      </table>
+      </div>
+    </div>
+</div>
