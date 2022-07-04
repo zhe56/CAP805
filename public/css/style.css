@@ -1,5 +1,4 @@
 body {
-  overflow-y: auto;
   background: #edebd7;
 }
 
@@ -32,7 +31,8 @@ body {
 
 
 ul, li {
-    margin-left: 0; padding-left: 0;
+    margin-left: 0; 
+    padding-left: 0;
 }
 
 #side-banner-title {
@@ -51,13 +51,13 @@ ul, li {
   color: black;
 }
 
-div form {
+div form{
     border-radius: 8px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}
 
-  input[type="submit"] {
+input[type="submit"]{
     width: 97%;
     background-color: rgb(204, 190, 173);
     padding: 14px 20px;
@@ -69,11 +69,11 @@ div form {
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 14px;
-  }
+}
   
-  input[type="submit"]:hover {
+input[type="submit"]:hover{
     background-color: rgb(142, 177, 241);
-  }
+}
 
   
 input[type="text"], input[type="email"], input[type="password"],
@@ -113,12 +113,12 @@ select, textarea {
 }
 
 .navbar-nav a{
-  color: #000000;
-  font-weight: 500;
+  color: #000000 !important;
+  font-weight: 500 !important;
 }
 
 .navbar-nav a:hover{
-  color: rgb(39, 185, 178);
+  color: rgb(39, 185, 178) !important;
 }
 
 .active a {
@@ -128,7 +128,6 @@ select, textarea {
 .navbar {
   background-color: #77766c;
 }
-
 
 .copyright{
   position: absolute;
