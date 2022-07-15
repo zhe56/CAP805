@@ -88,9 +88,7 @@ client.connect((err) => {
 //database query testing
 var posts = ""
 client
-  .query(
-    "SELECT content, TO_CHAR(created_on :: DATE, 'Mon dd, yyyy') FROM post"
-  )
+  .query("SELECT content, TO_CHAR(created_on, 'Mon dd, yyyy') FROM post")
   .then((result) => {
     posts = result.rows
     console.log(result.rows)
