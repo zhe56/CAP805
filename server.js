@@ -4,7 +4,7 @@ const clientSessions = require("client-sessions")
 const { Client } = require("pg")
 var app = express()
 app.set("view engine", ".hbs")
-var HTTP_PORT = process.env.PORT || 8080
+var HTTP_PORT = process.env.PORT || 8000
 require("dotenv").config()
 
 //allows us to access files within public and views
@@ -115,7 +115,7 @@ client
   .query("SELECT post_id, COUNT(post_id) FROM reply GROUP BY post_id")
   .then((result) => {
     replies = result.rows
-    console.log(replies)
+    //console.log(replies)
   })
   .catch((err) => {
     console.log(err.message)
