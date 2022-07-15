@@ -1,0 +1,33 @@
+<div class="container">
+        <div class="row">
+            <div class="col-12">
+            <br>
+            <h2><u>User Account:</u></h2>
+            <br>
+            </div>
+        </div>
+        <div>
+            <ul class="nav justify-content-end">
+                {{#navLink "/account"}}Account{{/navLink}}
+                {{#navLink "/profile"}}Profile{{/navLink}}
+                {{#navLink "/notifications"}}Notifications{{/navLink}}
+            </ul>
+        </div>
+        <div>
+            <form>
+                <h2>Account Settings</h2>
+                <div class="display-email">
+                    <h5 style="padding:0px 0px 10px 0px">Email:</h5>
+                    <input type="text" id="displayemail" name="displayemail" placeholder="User's current email">
+                    {{!-- Display username --}}
+                    <button type="button" class="btn btn-secondary">Change</button>
+                </div>
+                <div class="display-passowrd">
+                    <h5 style="padding:0px 0px 10px 0px">Password:</h5>
+                    <input type="text" id="displaypwd" name="displaypwd" placeholder="User's current password">
+                    {{!-- Display username --}}
+                    <button type="button" class="btn btn-secondary">Change</button>
+                </div>
+            </form>
+        </div>
+    </div>

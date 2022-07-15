@@ -1,0 +1,39 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <br>
+            <h2><u>User Profile:</u></h2>
+            <br>
+            </div>
+        </div>
+        <div>
+            <ul class="nav justify-content-end">
+                {{#navLink "/account"}}Account{{/navLink}}
+                {{#navLink "/profile"}}Profile{{/navLink}}
+                {{#navLink "/notifications"}}Notifications{{/navLink}}
+            </ul>
+        </div>
+        <div>
+            <form>
+                <h2>Profile Settings</h2>
+                <div class="display-name">
+                    <h5 style="padding:0px 0px 10px 0px">Display Name:</h5>
+                    <input type="text" id="displayname" name="displayname" placeholder="User's current Displayname">
+                    {{!-- Display username --}}
+                    <button type="button" class="btn btn-secondary">Change</button>
+                </div>
+                <div class="profile-pic">
+                    <h5 style="padding:0px 0px 10px 0px">Profile Picture:</h5>
+                    <img src="https://png.pngitem.com/pimgs/s/44-446384_north-carolina-tar-heels-duke-blue-devils.png" class="rounded mx-auto d-block"> 
+                    {{!-- Display profile picture --}}
+                    <button type="button" class="btn btn-secondary">Change</button>
+                </div>
+                <div class="about-yourself position-relative">
+                    <h5 style="padding:0px 0px 10px 0px">About yourself:</h5>
+                    <textarea class="form-control" id="about-yourself" rows="4" cols="50" name="about-yourself" placeholder="*Previous Self Intro text"></textarea>
+                    {{!-- Display username --}}
+                    <button type="button" class="btn btn-secondary">Change</button>
+                </div>
+            </form>
+        </div>
+    </div>
