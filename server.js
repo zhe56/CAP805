@@ -88,7 +88,9 @@ client.connect((err) => {
 //database query testing
 var posts = ""
 client
-  .query("SELECT * FROM post")
+  .query(
+    "SELECT content, TO_CHAR(created_on :: DATE, 'Mon dd, yyyy') FROM post"
+  )
   .then((result) => {
     posts = result.rows
     console.log(result.rows)
@@ -147,16 +149,16 @@ app.get("/topthreads", (req, res) => {
 })
 
 app.get("/profile", (req, res) => {
-  res.render("profile");
-});
+  res.render("profile")
+})
 
 app.get("/account", (req, res) => {
-  res.render("account");
-});
+  res.render("account")
+})
 
 app.get("/notifications", (req, res) => {
-  res.render("notifications");
-});
+  res.render("notifications")
+})
 
 app.listen(HTTP_PORT, () => {
   console.log("server listening on port: " + HTTP_PORT)
