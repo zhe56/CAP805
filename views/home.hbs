@@ -20,14 +20,15 @@
           </tr>
         </thead>
         <tbody>
-          {{!-- {{#each forumPost}} --}}
+          {{#if forumPost}}
+          {{#each forumPost}}
           <tr>
-            {{!-- <td>{{this.title}}</td> --}}
+            <td><a href="#">{{this.content}}</a></td>
             {{!-- <td id="main_titles">{{this.replies}}</td> --}}
-            <td><a href="#">Title 1</a></td>
-            <td id="main_titles">90</td>
+            {{!-- <td><a href="#">Title 1</a></td> --}}
+            <td id="main_titles">{{this.created_on}}</td>
           </tr>
-          <tr>
+          {{!-- <tr>
             <td><a href="#">Title 2</a></td>
             <td id="main_titles">12</td>
           </tr>
@@ -70,8 +71,9 @@
           <tr>
             <td><a href="#">Title 2</a></td>
             <td id="main_titles">12</td>
-          </tr>
-          {{!-- {{/each}} --}}
+          </tr> --}}
+          {{/each}}
+          {{/if}}
         </tbody>
       </table>
       </div>
@@ -90,3 +92,4 @@
       </div>
     </div>
     </div>
+  
